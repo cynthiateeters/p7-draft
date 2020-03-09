@@ -1,0 +1,48 @@
+.gallery,
+figure,
+.form-container {
+  display: grid;
+  justify-content: center;
+}
+
+.form {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 1.2rem;
+  }
+
+  hr {
+    display: none;
+  }
+
+  /* gallery layout */
+
+  figure {
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+  }
+
+  figure img {
+    grid-column: 1/4;
+  }
+
+  figure figcaption {
+    padding: 1rem;
+  }
+
+  /* form layout */
+
+  .form-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 1rem 1rem 4rem 1rem;
+  }
+
+  .invite {
+    width: 100%;
+    height: 100%;
+  }
+}
