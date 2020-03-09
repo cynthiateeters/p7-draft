@@ -112,10 +112,10 @@
           <form name="contact2" method="POST" data-netlify="true">
             <!-- name -->
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name..">
+            <input type="text" id="name" name="name" placeholder="Your name.." required>
             <!-- email -->
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email address..">
+            <input type="email" id="email" name="email" placeholder="Your email address.." required>
             <!-- country -->
             <label for="country">Country</label>
             <select id="country" name="country">
@@ -125,8 +125,8 @@
               <option value="usa">Other</option>
             </select>
             <!-- subject -->
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
