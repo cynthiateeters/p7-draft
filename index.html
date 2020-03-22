@@ -12,9 +12,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
   <link href="https://fonts.googleapis.com/css?family=Lora:700%7cOpen+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="form/form.css">
+  <link rel="stylesheet" href="form/radio.css">
+  <link rel="stylesheet" href="form/select.css">
+  <link rel="stylesheet" href="layout/layout.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
@@ -110,27 +112,50 @@
         </div>
         <div class="form-column form">
           <form name="contact2" method="POST" data-netlify="true">
-            <!-- name -->
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name.." required>
-            <!-- email -->
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email address.." required>
-            <!-- country -->
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa" selected="selected">USA</option>
-              <option value="other">Other</option>
-            </select>
-            <!-- subject -->
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
-            <button type="submit">Send</button>
+            <fieldset>
+              <legend>Contact Form</legend>
+              <!-- name -->
+              <label for="name">Name <span>(required)</span></label>
+              <input type="text" id="name" name="name" required>
+              <!-- email -->
+              <label for="email">Email <span>(required)</span></label>
+              <input type="email" id="email" name="email" required>
+              <!-- tel -->
+              <label for="tel">Phone <span class="optional">(optional)</span></label>
+              <input type="tel" id="tel" name="tel">
+              <!-- teltype -->
+              <label for="teltype">Phone type (optional)</label>
+              <select id="teltype" name="teltype[]" class="select-css">
+                <option value="teltype" selected="selected">Select phone type</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Work">Work</option>
+                <option value="Home">Home</option>
+              </select>
+              <!-- message -->
+              <label for="message">Your Comment (optional)</label>
+              <textarea id="message" cols="30" rows="8" name="message"></textarea>
+              <fieldset class="form-reply">
+                <legend id="radio-legend">Would you like a reply?</legend>
+                <ul class="radio">
+                  <li class="radio-wrapper">
+                    <input id="radio-yes" type="radio" name="reply[]" value="Yes, a reply would be nice" aria-labelledby="radio-legend">
+                    <label for="radio-yes" class="radio-button">
+                      Yes, a reply would be nice
+                    </label>
+                  </li>
+                  <li class="radio-wrapper">
+                    <input id="radio-no" type="radio" name="reply[]" value="No, thanks" checked="checked" aria-labelledby="radio-legend">
+                    <label for="radio-no" class="radio-button">No, thanks
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit">Send</button>
+            </fieldset>
           </form>
         </div>
       </div>
+      <!-- close contact section -->
     </section>
     <!-- close main -->
   </main>

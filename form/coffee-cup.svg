@@ -2,7 +2,7 @@
   <style>
     .st4,.st5{clip-path:url(#SVGID_2_);fill:#845021}.st5{fill:#955f26}
   </style>
-  <path fill="#bfbfbf" d="M0 0h800v600H0z" id="background"/>
+  <path fill="#bfbfbf" fill-opacity="0" d="M0 0h800v600H0z" id="background"/>
   <g id="cup_of_cofee">
     <circle cx="353.4" cy="300" r="148.1" fill="#f5f0d9"/>
     <path fill="none" stroke="#f5f0d9" stroke-width="37" stroke-linecap="round" stroke-miterlimit="10" d="M501.5 300h93.2"/>

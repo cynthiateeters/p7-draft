@@ -10,7 +10,7 @@
 /* default settings */
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #636363;
   font-size: 1rem;
   margin: 0;
@@ -25,7 +25,7 @@ h4,
 h5,
 h6,
 figcaption {
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 img {
@@ -111,7 +111,7 @@ img.my-picture {
 .gallery,
 .story,
 .contact {
-  padding: 2.5em;
+  padding: 5vw;
 }
 
 .content {
@@ -126,7 +126,7 @@ img.my-picture {
   max-width: 100%;
   color: #07310b;
   font-size: 1.25rem;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-weight: 700;
 }
 
