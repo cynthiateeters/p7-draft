@@ -6,8 +6,8 @@ form {
 .invite {
   max-width: 98%;
   max-height: 98%;
-  width: 98vw;
-  height: 80vw;
+  width: 98%;
+  height: 70vw;
   margin: 0 auto;
   background-image: url("./coffee-cup.svg");
   background-repeat: no-repeat;
