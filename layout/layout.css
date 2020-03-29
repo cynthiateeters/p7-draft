@@ -3,8 +3,10 @@
 /* change story to 2-column */
 
 .story div {
-  max-width: 40rem;
-  column-width: 18rem;
+  max-width: 90vw;
+  column-width: 30rem;
+  column-gap: 2.5rem;
+  font-size: 1rem;
 }
 
 .story div p:first-child {
@@ -28,7 +30,7 @@ figure,
 
 @media screen and (min-width: 50rem) {
   html {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   hr {
@@ -68,7 +70,7 @@ figure,
 
 @media screen and (min-width: 80rem) {
   html {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
   figure {
