@@ -4,9 +4,10 @@
 
 .story div {
   max-width: 90vw;
-  column-width: 30rem;
+  column-width: 26rem;
   column-gap: 2.5rem;
   font-size: 1rem;
+  column-rule: 1px solid #ccc;
 }
 
 .story div p:first-child {
