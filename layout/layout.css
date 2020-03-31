@@ -89,4 +89,7 @@ figure,
 
 .github {
   fill: white;
+  margin-left: 1rem;
+  margin-bottom: -0.5rem;
+  width: 1.4rem;
 }
