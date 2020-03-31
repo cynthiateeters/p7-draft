@@ -27,7 +27,7 @@ figure,
   padding: 1rem;
 }
 
-/* media query */
+/* media query mid-sized screen */
 
 @media screen and (min-width: 50rem) {
   html {
@@ -67,7 +67,7 @@ figure,
   }
 }
 
-/* media query */
+/* media query large-sized screen*/
 
 @media screen and (min-width: 80rem) {
   html {
@@ -85,4 +85,8 @@ figure,
   .gallery h2 {
     grid-column: 1/-1;
   }
+}
+
+.github {
+  fill: white;
 }
